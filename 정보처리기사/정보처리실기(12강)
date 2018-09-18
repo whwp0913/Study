@@ -1,0 +1,87 @@
+정보처리기기사(데이터베이스) --> 5문제
+
+12강
+
+*트랜잭션(transaction)
+    하나의 거래과정(=하나의 작업단위)
+    하나의 트랜잭션은 commit 이거나 rollback이다
+
+    ACID(아카이드 성질)
+        - Atomicity 원자성
+            all or nothing
+            '전부' or '전무' 이어야 한다
+        - consistency 일관성
+            하나의 트랜잭션이 실행되면 결과가 반영된 데이터들은 일치해야 한다
+        - isolation 독립성
+            하나의 트랜잭션은 다른 트랜잭션에 영향을 줄 수 없다
+        - durability 영속성
+            트랜잭션이 완료되면 그 결과는 유지되어야 한다
+
+*회복(recovery)
+    트랜잭션 실행 도중 장애 발생 -> 장애 이전의 상태로 복구과정
+
+    장애유형
+        - 실행 장애
+            rollback과 같은 연산에 의한 장애
+        - 트랜잭션 장애
+            비정상적 종료 -> 연산 도중
+        - 시스템 장애
+            H/W적 / S/W 적..
+        - 미디어 장애
+            저장장치(=하드디스크)에 의한 장애
+
+    중복 저장 기법(back up)
+        복사본을 만들어 놓는다
+        -덤프(dump)
+            주기적으로 복사본을 만들어 그대로 다른 DB에 저장
+        -로그(log)
+            모든 트랜잭션의 기록
+            데이터베이스가 변경될 때 데이터의 이전 값 / 이후 값을 기록하는 기법
+
+    회복의 원리
+        1)로그의 이용
+            redo(재수행) -> commit이 수행된 후 재수행
+            undo(취소) -> 이전의 값으로 되돌리는 것
+        2)덤프의 이용
+
+        즉시 갱신(immediate update) -> 바로바로 갱신
+        지연 갱신(deferred modification) -> log먼저 기록하고 commit 되면 실제 데이터 갱신(no undo)
+        검사 시점(check point) -> 검사 시점이전에 완료된 애들은 검사 X
+
+*그림자 페이징(shadow paging)
+    로그이용 x
+    복사본으로 원본을 살려냄
+
+*병행 제어(concurrency control)
+    DB는 여러 명의 사용자가 사용 -> 병행 제어가 필요함
+
+    갱신 분실(lost update)
+        두 개 이상의 트랜잭션이 같은 자료를 공유하여 갱신할 때 결과 일부가 분실
+    비완료 의존성(uncommitted dependency) =Dirty read
+        트랜잭션이 실패한 갱신 결과를 참조하는 현상
+    모순성(inconsistency)
+        직렬성에는 문제가 없지만 원래 원하는 수행 값이 다른 트랜잭션에 의해 변하는 경우
+    연쇄 복귀(cascading rollback)
+        트랜잭션 간의 작업에 롤백시 전부 롤백되는 경우
+
+*스케줄
+    직렬 스케줄(serial schedule)
+        트랜잭션의 연산을 모두 순차적으로 실행하는 유형
+    비직렬 스케줄(nonserial schedule)
+        병행 스케줄=인터리빙 방식으로 처리
+
+*병행제어 기법
+    로킹(locking) - 비관적
+        무한정 기다리는(deadlock) 발생가능
+        화장실 사용시 문을 잠궈버림
+    타임스탬프(time stamp) - 낙관적
+        시간 대기표를 줘서 다른일도 수행가능
+
+*2단계 로킹 (two-phase locking)
+    성장단계 - lock - growing phase
+    축소단계 - unlock - shrinking phase
+
+*전용 로크(exclusive lock)
+    read write 허용
+*공용 로크(shared lock)
+    read 허용
