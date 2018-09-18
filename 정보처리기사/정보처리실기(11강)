@@ -1,0 +1,39 @@
+정보처리기기사(데이터베이스) --> 5문제
+
+11강
+
+*트리거(trigger)
+    방아쇠, 연쇄적인 동작을 수행하는 것
+    ex)
+    입고 수량 / 재고 수량 / 판매 수량 -> 입고 수량이 발생하면 재고수량은 (+), 판매 수량이 발생하면 재고수량은 (-) -> 자동적으로...
+
+    create trigger 이름 on 테이블 for 동작
+    as
+    declare @컬럼 타입, @컬럼 타입
+    set @컬럼 = (select 상품 from inserted)
+    set @컬럼 = (select 입고수량 from inserted)
+    -> inserted는 가상 테이블
+    update 상품
+    set 재고수량 = 재고수량 + @컬럼
+    where 상품코드 = @컬럼
+
+*내장형 SQL(Embedded SQL)
+    응용 프로그램내에 SQL을 내포하여 프로그램이 실행될 때 함께 실행되도록~
+
+    - 내장형 SQL은 단 하나의 듀플만을 반환한다 -> 변수에 저장해놓기 때문에...
+    - 컴파일 시 전처리기에 의해 분리되어 컴파일 된다
+    - EXEC SQL을 붙여 다른 문과 구분한다
+    - begin declare / end declare section 사이에 명시 -> 변수 선언
+
+*커서(Cursor)
+    내장형 SQL에서 복수 개의 튜플에 접근하기 위해 사용
+    - declare
+    - open
+    - fetch
+    - close
+
+*스토어드 프로시저(stored procedure)
+    하나의 부 프로그램이라고 보면됨
+
+    연속된 SQL 문장을 하나로 모아 서버에 미리 컴파일해서 저장 -> 사용
+    저장공간 효율높음 / 모듈화로 재사용성 용이 / 접근 권한을 제한하여 보안성 향상
