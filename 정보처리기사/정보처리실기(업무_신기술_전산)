@@ -1,4 +1,4 @@
-DBA - database administration
+DBA - database administrator
 :데이터베이스의 전체적인 관리 운영에 대한 최고의 책임
 
 DBMS - database management system
@@ -8,51 +8,69 @@ FTP - file transfer protocol
 :인터넷을 통한 파일 교환 프로토콜
 
 RSS - really simple syndication
-:콘텐츠 업데이트가 잦은 web의 업데이트 정보를 제공하는xml기반 포맷, web피드
+:콘텐츠 업데이트가 잦은 web의 업데이트 정보(구독)를 제공하는xml기반 포맷, web피드
 
 MODEM
-:변조 복조 장치, 반송파 신호 변조, 원래 신호 복조
+:변조 복조 장치, 반송파 신호 변조, 원래 신호 복조 -> modulator / demodulator의 합성어
+->modulator로는 디지털선호를 아날로그신호로 변조 / demodulator로는 아날로그신호를 디지털신호로 복조
 
 APT - advanced persistent threat
 :지능형 지속 위협, 특정기업이나 조직 네트워크 대상으로 보안을 위협, 정보를 수집한 다음 파괴하는 수법
+->공격자가 다양한 해킹기술로 특정대상에게 은밀하게 지속적인 공격을 하는 행위
 
-PKI - public key inrastructure
+PKI - public key infrastructure
 :공개키 기반구조로 공개키 암호화 시스템
+->비대칭 키 시스템 -> 공개키 암호와, 개인키 복호화 / 개인키 전자서명, 공개키 서명검증
 
 3C
 :고객(customer), 기업(company), 경쟁사(competitor) 중심의 시장환경 분석
+->SWOT 분석을 주로 이용 -> Strengths, weaknesses, opportunities, threats
 
 4P
 :제품(product), 가격(price), 유통경로(place), 판매촉진(promotion) 중심으로 마케팅 효과 추구
+->기업의 목표달성을 위해 통제 가능한 마케팅 변수 -> +physical evidence, people, process 추가되면 7P
 
 5-FORCE
-:마이클 포터가 주장 / 경쟁정도, 교섭력, 위협, 위협요소 5가지 요인으로 산업 경쟁력 및 수익성이 결정
+:마이클 포터가 주장한 산업 분석 모델
+1)기존 경쟁사들간의 경쟁을 중심으로
+2)잠재적 경쟁사(신규진입자)
+3)대체재
+4)공급자의 협상력
+5)구매자의 협상력
 
 7S
-:맥킨지 라는 회사에서 만든 조직을 변화시키기 위한 모델 / 7가지 요소
+:맥킨지 라는 회사에서 만든 조직을 변화시키기 위한 모델 -> 조직진단 모델 / 7가지 요소
+Hard elements
+1)strategy(전략)
+2)system(시스템)
+3)structure(구조)
+
+soft elements
+4)shared values(공유가치)
+5)style(스타일)
+6)staff(구성원)
+7)skills(기술)
 
 SWOT
-:강점(strength), 약점(weakness), 기회(opportunity), 위협(threat) 이를 토대로 경영전략 수립
+:강점(strength) 약점(weakness) -> 내적 분석 / 기회(opportunity) 위협(threat) -> 환경 분석
 
 STP
 :시장을 세분화하고 타깃을 설정해 목표시장에 제품을 포지셔닝 하는 전략
+->segmentation, targeting, positioning
 
 USIM - universal subscriber identity module
 :범용 가입자 식별 모듈, 휴대전화 사용자 개인정보 저장 모듈
 
 SEM - strategic enterprise management
-:전략적 기업 경영, 구성요소 -> VBM, ABM, BSC
-
-
-VBM - value based management
-:가치 중심 경영, 최고의 경제가치를 창조하는데 기업이 영향을 미치는 각종 기업 자원 활용의 의사결정
-
-ABM - activity based management
-:활동 중심 관리, 활동에 근거를 두고 정확한 원가대상에 성과를 측정
-
-BSC - balanced score card
-:균형 성과 관리, 무형의 자산평가
-
+:기업의 가치의 극대화를 위해 경영전략을 수립하고 전략중심형 조직을 구축하고 실행하는 경영프로세스와 시스템으로 운영되는 기업경영체이다
+    구성요소
+1)VBM - value based management (가치중심 경영)
+:최고의 경제가치를 창조하는데 기업이 영향을 미치는 각종 기업 자원 활용의 의사결정
+2)ABM - activity based management (활동중심 관리)
+:활동에 근거를 두고 정확한 원가대상에 성과를 측정
+3)BSC - balanced score card (기업성과 관리)
+:재무 측면의 평가를 탈피하여 고객, 내부프로세스, 학습과 성장의 관점에서 성과를 측정
+--------------------------------------------------------------------------------
 DDos - distributed denial of service
 :해킹 방식의 하나, 여러 대의 공격자를 분산 배치하여 동시에 ‘서비스 거부 공격'
 
