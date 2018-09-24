@@ -14,7 +14,7 @@ MODEM
 :변조 복조 장치, 반송파 신호 변조, 원래 신호 복조 -> modulator / demodulator의 합성어
 ->modulator로는 디지털선호를 아날로그신호로 변조 / demodulator로는 아날로그신호를 디지털신호로 복조
 
-APT - advanced persistent threat
+APT - advanced persistent threat --------------------------------------------------- check
 :지능형 지속 위협, 특정기업이나 조직 네트워크 대상으로 보안을 위협, 정보를 수집한 다음 파괴하는 수법
 ->공격자가 다양한 해킹기술로 특정대상에게 은밀하게 지속적인 공격을 하는 행위
 
@@ -78,7 +78,7 @@ ping of death
 :죽음의 핑, 큰 패킷을 전송하여 발생한 ‘서비스 거부 공격'
 
 RFID - radio frequency Identification
-:IC칩과 무선을 통해 다양한 개체의 정보를 관리할 수 있는 인식 기술 -> 판독기와 태그로 구성
+:IC칩과 무선을 통해 다양한 개체의 정보를 관리할 수 있는 인식 기술 -> 판독기와 태그로 구성, 전자태그라고도 불림
 
 Typosquatting
 :타이포스쿼팅, 사이트 주소를 잘못 입력하거나 철자를 빠뜨리는 경우를 대비하여 도메인 미리 등록
@@ -113,7 +113,7 @@ Big Data
 URL - Uniform Resource Locator
 :인터넷 정보의 위치, 표준 주소 체계
 
-EIS - executive information system
+EIS - executive information system --------------------------------------------------- check
 :경영진 정보 시스템
 
 ONS - Object Name Service
@@ -144,7 +144,7 @@ CRM - Customer Relationship Management
 :고객관계관리, 고객에 대한 정보 자료를 정리하고 분석해 마케팅 정보로 변환 -> 고객 중심의 경영 기법
 
 EAI - Enterprise Application Integration
-:기업 어플리케이션 통합, 비즈니스 프로세스를 중심으로 기업 내 시스템과 애플리션 간 상호 연동 통합
+:기업 어플리케이션 통합, 비즈니스 프로세스를 중심으로 기업 내 시스템과 어플 간 상호 연동 통합
 
 VPN - Virtual Private Network
 :가상사설망, 공공회선을 사용해 노드를 연결한 것으로 구축되는 네트워크
