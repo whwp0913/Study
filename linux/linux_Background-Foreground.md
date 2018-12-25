@@ -12,4 +12,4 @@
     를 통해 foreground로 전환가능
 
 3. process kill
-    - background에 있는 프로세스를 강제종료 -> kill %[프로세스 번호] 또는 kill -9 %[프로세스 번호]
+    - background에 있는 프로세스를 강제종료 -> kill %[프로세스 번호] 또는 kill -9 %[프로세스 번호] 
